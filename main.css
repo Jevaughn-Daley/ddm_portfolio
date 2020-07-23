@@ -366,6 +366,10 @@ html {
 
     #my-modal-container{
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         height: 100%;
         width: 100%;
         z-index: 100;
@@ -373,25 +377,18 @@ html {
     
     .my-modal-content{
         background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-
+        /* position: absolute; */
+        position: relative;
         height: 90%;
         width: 80%;
         border-radius: .4rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        overflow-y: scroll;
+        overflow-y: auto;
         margin-bottom: 1rem;
     }
 
-   
 
     .nav-modal{
-        position: fixed;
 
-        top: 1rem;
-        /* left: 50%; */
         height: 2rem;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -413,9 +410,6 @@ html {
         text-decoration: underline;
         color: #fff;
     }
-
-
-
 
     #close-modal{
         padding: .5rem 1rem;
