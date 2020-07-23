@@ -1,0 +1,632 @@
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color: #fff;
+}
+
+/* Box Model */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    height: 100vh;
+    width: 100%;
+
+}
+
+ul,li{
+    text-decoration: none;
+    list-style: none; 
+}
+
+a:link, a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none ;
+}
+/*Type*/
+
+
+html {
+    font-size: 10pt;
+}
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        html {
+            font-size: 11pt;
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        html {
+            font-size: 11pt;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        html {
+            font-size: 12pt;
+        }
+    }
+
+
+/* BG */
+
+/* Wrapper */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+}       
+
+#wrapper:before {
+    content: '';
+    display: block;
+}
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px){
+        #wrapper {
+            /* padding: 2rem 1rem; */
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        #wrapper {
+            /* padding: 3rem 2rem; */
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        #wrapper {
+            /* padding: 4rem 3rem; */
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        #wrapper {
+            /* padding: 5rem 4rem; */
+        }
+    }
+/* Header*/
+
+#header {
+    position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: .5rem 0;
+   text-align: center;
+   width: 100%;
+}
+
+    #header #logo{
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        border: 1px #fff solid;
+        border-radius: 100%;
+        align-self: center;
+ 
+    }
+
+    #header #logo :before {
+        font-size: 3rem;
+        vertical-align: middle;
+    }
+
+    #header .content{
+        display: block;
+        position: relative; 
+        margin:2rem 0;
+        padding: 1rem 0;
+        border-top: 1px #fff solid;
+        border-bottom: 1px #fff solid;
+        color: #fff;
+        text-align: center;
+ 
+    }
+
+    #header .content .center-content{
+        width: max-content;
+        margin: 0 auto;
+    }
+    #header .content h1{
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+
+
+    #header nav{
+        display: block;
+        align-self: center;
+    }
+
+    #header nav ul{
+        display: flex;
+        flex-direction: column;
+    } 
+      
+    #header nav ul li{
+        display: block;
+        border:1px #fff solid;
+        margin-top: -1px;
+        transition: ease-in-out .2s;
+    }
+    #header nav ul li:first-child{
+            border-radius: .4rem .4rem 0 0 ;
+        }
+
+        #header nav ul li:last-child{
+            border-radius: 0 0 .4rem .4rem;
+            margin-top: .5rem;
+        }
+    #header nav ul li:hover{
+        display: inline-block;
+        border: 1px #fff solid;
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+   #header nav ul li a{
+        display: block;
+        line-height: 1.5rem; 
+        padding:  .7rem 1.5rem;  
+        font-size: .9rem;
+        text-transform: uppercase;
+    }
+
+    #header nav ul li a:hover{
+        color: #fff;
+        text-decoration: none;
+    } 
+
+    #header .social-sidebar{
+        position: fixed;
+        display: block;
+        top: 48%;
+        right: 0;
+        width: 2rem;
+        margin-right: 5%;
+        z-index: 5;
+        text-align: center;
+    }
+
+    #header .social-sidebar p{
+        display: block;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-weight: 500;
+        margin: 0;
+    }
+    #header .social-sidebar  p::after{
+        content: "";
+        display: inline-block;
+        width:.1rem;
+        height: 1.8rem;
+        background-color: #fff;
+        margin-top: .5rem;
+    }
+
+    #header .social-sidebar a{
+        color: #fff;
+        display: block;
+        padding: .2rem;
+        margin-right: .5rem;
+        font-size: 1.1rem;
+    }
+
+    #header .social-sidebar a:hover{
+        font-size: 1.5rem;
+        transition: all ease .2s;
+    }
+    
+    #header .social-sidebar a i{
+        color: inherit;
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        #header{
+            padding: 1rem .5rem;
+            width: 80%;
+        }
+
+        #header .content{
+            margin:3rem 0;
+            padding: 2rem;
+        }
+
+        #header .content h1{
+            letter-spacing: 0.1rem;
+            font-size: 1.8rem;
+        }
+
+        #header nav ul{
+            flex-direction: row;
+        } 
+        #header nav ul li{
+            margin-left: -1px;
+        }
+        
+        #header nav ul li:first-child{
+            border-radius: .4rem 0 0 .4rem;
+        }
+    
+        #header nav ul li:last-child{
+            border-radius:  0 .4rem .4rem 0 ;
+            margin-top: -1px;
+            margin-left: .5rem;
+        }
+        #header nav ul li a{
+            line-height: 1rem; 
+            padding:  .5rem 1rem;  
+            font-size: .9rem;
+            text-transform: uppercase;
+        }
+
+        #header .social-sidebar{
+            transform: translateY(-48%);
+        }
+    }
+
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        #header{
+            padding: 1rem .5rem;
+            width: 80%;
+        }
+
+        #header .content{
+            margin:3rem 0;
+            padding: 2rem;
+        }
+
+        #header .content h1{
+            letter-spacing: 0.1rem;
+            font-size: 1.8rem;
+        }
+    }
+
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        #header{
+            padding: 2rem;
+            width: 70%;
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        #header{
+            padding: 3rem;
+            width: 60%;
+            max-width: 1200px;
+        }
+    }
+
+    
+    /* Main section */
+    /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+     /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+      /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+       /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+        /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+         /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+          /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+           /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+            /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+             /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+              /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+               /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+                /* !!!!!!!!!!!Need to to do media queries for the below section!!!!!!!!!!!!! */
+    
+
+#main{
+    display: none;
+    position: absolute;
+    opacity: .8;
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+
+    #my-modal-container{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .my-modal-content{
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+
+        height: 90%;
+        width: 80%;
+        border-radius: .4rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow-y: scroll;
+        margin-bottom: 1rem;
+    }
+
+   
+
+    .nav-modal{
+        position: fixed;
+
+        top: 1rem;
+        /* left: 50%; */
+        height: 2rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        
+    }
+
+    #sticky-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #sticky-nav a{
+        align-self: center;
+        color: #fff;
+    }
+
+    #sticky-nav a:active{
+        text-decoration: underline;
+        color: #fff;
+    }
+
+
+
+
+    #close-modal{
+        padding: .5rem 1rem;
+        width: 3rem;
+        float: right;
+        font-size: 1.5rem;
+    }
+    
+/* article */
+
+
+.title-container{
+    display: block;
+    width: min-content;
+    margin-bottom: 2rem;
+}
+
+.title{
+    position: relative;
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+
+}
+.title:after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+
+#intro-img{
+    display: block;
+    width: 100%;
+    height:100px;
+    border-radius: .4rem;
+    margin-bottom: .5rem;
+    overflow: hidden;
+}
+
+#intro-img img{
+    width: 100%;
+    object-fit: cover;
+    /* object-position: 0 -50px; */
+    
+}
+
+
+/* SKills */
+.skills{
+    background-color: rgba(48, 48, 48, 0.603);
+    border-radius: .4rem;
+    padding: .1rem;
+
+}
+
+.skills h3{
+    font-size: 1.1rem;
+    padding: .4rem;
+    margin: .5rem 0 ;
+    letter-spacing: 0;
+}
+
+.skills p{
+    margin: 0;
+    font-weight: bold;
+    font-size: .9rem;
+    font-style: italic;
+}
+
+.skills p.technology{
+    font-size: 1rem;
+}
+
+.skills p.years{
+    display: inline-block;
+}
+.skills p.years::first-letter{
+    color: red;
+}
+
+/* 
+use for bigger screens
+.skills p.years:after{
+    content: " | ";
+    color: #fff;
+} */
+
+.skills p.projects{
+    display: inline-block;
+}
+
+.skills p.projects::first-letter{
+    color: red;
+}
+
+
+.skills .bars{
+    display: block;
+    height: 1rem;
+    padding: .4rem 0;
+    margin-bottom: .4rem;
+}
+
+.skills .bars span{
+    display: inline-block;
+    width: .7rem;
+    height: 1.4rem;
+    border-radius: .2rem; 
+    margin-right: .1rem;  
+    /* margin-bottom: 1rem; */
+}
+
+.skills .bars .t-bar{
+    background: linear-gradient(
+    to bottom, 
+    #fff 0%, 
+    #fff 50%, 
+    #000000 50%, 
+    #000000 100%
+  );   
+}
+.skills .bars .p-bar{
+    background: linear-gradient(
+    to bottom, 
+    rgb(250, 125, 125) 0%, 
+    rgb(248, 114, 114) 50%, 
+    #000000 50%,
+    #000000 100%
+  );     
+}
+
+/* Work */
+
+#work{
+
+}
+
+    #work p{
+        display: block;
+        font-weight: 500;
+        
+    }
+
+    #work-search {
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: .4rem 1rem;
+        border: 1px solid #ddd;
+        margin:.5rem 0;
+        border-radius: .4rem;
+    }
+
+    #work ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #work ul li{
+        display: block;
+        margin-top: .2rem;
+        
+    }
+
+    #work ul li a{
+        display: inline-block;
+        border: 2px solid #fff;
+        border-radius: .4rem;
+        background-color: transparent;
+        padding: .3rem .8rem;
+    }
+
+    #work ul li a:active{
+        background-color:red;
+        text-decoration: none;
+    }
+
+    #work .work-item{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-radius: .4rem;
+    }
+
+    #work .work-item .type-img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 1rem;
+    }
+
+    #work .work-item .work-img{
+        height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    }
+
+    #work .view-more{
+        display: block;
+        width: 50%;
+        border: 2px solid #fff;
+        border-radius: .4rem;
+        background-color: transparent;
+        margin: .4rem auto;
+        padding: .3rem .8rem;
+    }

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DDM Portfolio</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header id="header">
+            <div id="logo">
+                <span class="fa fa-diamond"></span>
+            </div>
+            <div class="content">
+                <div class="center-content">
+                    <h1>DaleyDose Media</h1>
+                    <p>Create. Capture. Deliver.</p>
+                    <p>For your Photography and Web Development needs.</p>
+                    
+                    <!-- <div class="cta">
+                        <a href="" class="btn btn-primary">Contact Me</a>
+                        <a href="" class="btn btn-primary">Download Resume</a>
+                    </div> -->
+                </div>
+               
+            </div>
+            <nav>
+                <ul id="main-nav">
+                    <li><a class="js-links" href="#intro">Intro</a></li>
+                    <li><a class="js-links" href="#work">Work</a></li>
+                    <li><a class="js-links" href="#about">About</a></li>
+                    <li><a class="js-links" href="#contact">Contact</a></li>
+                    <li><a class="js-links" href="#client-portal">Client Portal</a></li>
+                </ul>
+            </nav>
+            <div class="social-sidebar">
+                <p>Follow Me</p>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-dribble"></i></a>
+
+            </div>
+        </header>
+
+        <section id="main">
+            <div id="my-modal-container">
+                <div class="my-modal-content nav-modal">
+                    <article>
+                        <div class="container">
+                            <div id="sticky-nav">
+                                <a class="js-links" href="#intro">Intro</a>
+                                <a class="js-links" href="#work">Work</a>
+                                <a class="js-links" href="#about">About</a>
+                                <a class="js-links" href="#contact">Contact</a>
+                                <a class="js-links" href="#client-portal">Client Portal</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="my-modal-content">
+                    <div class="clearfix">
+                        <span id="close-modal">&times;</span>
+                    </div>
+
+                    <article id="intro" style="display: none;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="title-container">
+                                        <h2 class="title">Intro</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div id="intro-img">
+                                        <img src="{{url_for('static', filename='img/bady-unsplash.jpg')}}"
+                                            alt="intro-img">
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="intro-body">
+                                        <p>
+                                            Hi there, my name Jevaughn Daley. I am
+                                            <!-- <span class="intro" data-period="200"
+                                                    data-type='["a Photographer.", "a Web Designer.", "Web Developer.","a Freelancer."]'>
+                                                    <span class="wrap"></span>
+                                            </span> -->
+                                            <!-- <span class="what-i-do" data-period="200"
+                                                    data-type='["a Photographer.", "a Web Designer.", "Web Developer.","a Freelancer."]'>
+                                                    <span class="wrap"></span>
+                                            </span> -->
+                                            <br> based in South Florida. I have 1 year experience in web WebDevelopment
+
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quasi, animi! A vero aperiam eum similique velit, fuga quasi veritatis
+                                            saepe?
+                                        </p>
+                                        <a href="#" class="btn btn-secondary mb-2">Download CV</a>
+                                    </div>
+                                </div>
+                            </div>                           
+                            <div class="col-12 skills">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3 class="title">What I know:</h3>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <p class="technology">HTML5</p>
+                                        <p class="years"> 2 Years</p>
+                                        <p class="projects"> 2 Projects</p>
+                                        <div class="bars">
+                                            <span class="t-bar"></span>
+                                            <span class="t-bar"></span>
+                                            <span class="p-bar"></span>
+                                            <span class="p-bar"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <p class="technology">CSS3</p>
+                                        <p class="years"> 2 Years</p>
+                                        <p class="projects"> 2 Projects</p>
+                                        <div class="bars">
+                                            <span class="t-bar"></span>
+                                            <span class="t-bar"></span>
+                                            <span class="p-bar"></span>
+                                            <span class="p-bar"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <p class="technology">JAVASCRIPT</p>
+                                        <p class="years"> 2 Years</p>
+                                        <p class="projects"> 2 Projects</p>
+                                        <div class="bars">
+                                            <span class="t-bar"></span>
+                                            <span class="t-bar"></span>
+                                            <span class="p-bar"></span>
+                                            <span class="p-bar"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <p class="technology">HTML5</p>
+                                        <p class="years"> 2 Years</p>
+                                        <p class="projects"> 2 Projects</p>
+                                        <div class="bars">
+                                            <span class="t-bar"></span>
+                                            <span class="t-bar"></span>
+                                            <span class="p-bar"></span>
+                                            <span class="p-bar"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        <p class="technology">HTML5</p>
+                                        <p class="years"> 2 Years</p>
+                                        <p class="projects"> 2 Projects</p>
+                                        <div class="bars">
+                                            <span class="t-bar"></span>
+                                            <span class="t-bar"></span>
+                                            <span class="p-bar"></span>
+                                            <span class="p-bar"></span>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>                       
+                    </article>
+                    <article id="work" style="display: none;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="title-container">
+                                        <h2 class="title">Work</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Dont show on small devies -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>Filter:</p>
+                                    <input type="text" id="work-search" onkeyup="myFunction()" placeholder="Search" title="Search">
+                                    <ul>
+                                        <li><a class="" href="">All</a></li>
+                                        <li><a class="" href="">Photos</a></li>
+                                        <li><a class="" href="">Web Dev</a></li>
+                                        <li><a class="" href="">Designs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3  mb-4">
+                                    <!-- jinja for loop to show all work -->
+                                    <div class="work-item">
+                                        <span class="type-img"><i class="fa fa-pencil"></i></span>
+                                        <div class="work-img">
+                                            <!-- <img src="static\image.img_url" alt="image.alternate_text">  -->
+                                            <img src="{{url_for('static', filename='img/bady-unsplash.jpg')}}" alt="" srcset="">
+                                        </div>
+                                        <!-- Dont show on small devies -->
+                                        <div class="photo-description">
+                                            <div class="content">
+                                                <!-- <h2>image.name</h2>
+                                            <h3>image.category</h3> -->
+                                                <span class="v-line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                                    <!-- jinja for loop to show all work -->
+                                    <div class="work-item">
+                                        <span class="type-img"><i class="fa fa-pencil"></i></span>
+                                        <div class="work-img">
+                                            <!-- <img src="static\image.img_url" alt="image.alternate_text">  -->
+                                            <img src="{{url_for('static', filename='img/bady-unsplash.jpg')}}" alt="" srcset="">
+                                        </div>
+                                        <!-- Dont show on small devies -->
+                                        <div class="photo-description">
+                                            <div class="content">
+                                                <!-- <h2>image.name</h2>
+                                            <h3>image.category</h3> -->
+                                                <span class="v-line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <a href="" class="view-more">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="contact" style="display: none;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="title-container">
+                                        <h2 class="title">Contact Me</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <form action="" method="post">
+                                        <div class="form-row">
+                                            <div class="col-12 col-sm-6  mb-3">
+                                               <input class="form-control" type="text" name="name" id="name" placeholder="Enter Name">
+                                            </div>
+                                            <div class="col-12 col-sm-6 mb-3">
+                                                <input class="form-control" type="email" name="email" id="email" placeholder=" Enter Email"> 
+                                            </div>
+                                        </div>
+                                        <div class="form-row  mb-3">
+                                            <div class="col-12">
+                                                <select class="form-control" name="category" id="category" placeholder=" Select Category">
+                                                    <option value="photo">Photography</option>
+                                                    <option value="web">Web</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mb-3">
+                                            <div class="col-12">
+                                                <input class="form-control" type="text" name="subject" id="subject" placeholder="Enter Subject">
+                                            </div>
+                                        </div>
+                                        <div class="form-row mb-3">
+                                            <div class="col-12">
+                                                <textarea class="form-control" name="message" id="message" cols="100" rows="10" placeholder="Enter Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mb-3">
+                                            <div class="col-4 ">
+                                                <input class="form-control" type="submit" value="Send">
+                                            </div>
+                                        </div>
+                                        
+                                    </form>
+
+                                </div>
+                            </div>
+                            
+                                    
+                            
+                            
+                        </div>
+                    </article>
+
+                    <article id="client-portal" style="display: none;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="title-container">
+                                        <h2 class="title">Client Portal</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <form action="" method="post">
+                                        <div class="form-row mb-3">
+                                            <div class="col-12">
+                                               <input class="form-control" type="email" name="email" id="email" placeholder="Enter Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-row mb-3">
+                                            <div class="col-12 ">
+                                                <input class="form-control" type="password" name="password" id="password" placeholder="Enter Name">
+                                             </div>
+                                        </div>
+                                        <div class="form-row mb-3">
+                                            <div class="col-4 ">
+                                                <input class="form-control" type="submit" value="Login">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <small>Need a login created?</small>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2020 Jevaughn Daley. All rights Reserved</p>
+        </footer>
+    </div>
+
+
+
+    <!-- <div id="bg"></div> -->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='js/typewriter.js')}}"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>
